@@ -14,17 +14,18 @@ export const Inscription = (props) => {
     return (
         <div className="auth-form-container">
             <h2>Inscription</h2>
-        <form className="register-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">Nom complet</label>
-            <input value={name}  onChange={(e) => setName(e.target.value)} id="name"name="name"/>
-            <label htmlFor="email">E-mail</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" id="email" name="email" />
-            <label htmlFor="number">Numero de mobile</label>
-            <input value={number} onChange={(e) => setNumber(e.target.value)}type="number" id="number" name="number" />
-            <label htmlFor="password">Mot de passe</label>
-            <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" id="password" name="password" />
-            <button type="submit">S'inscrire</button>
-        </form>
-    </div>
+            <form className="register-form" onSubmit={handleSubmit}>
+                <label htmlFor="name">Nom complet</label>
+                <input value={name}  onChange={(e) => setName(e.target.value)} id="name"name="name"/>
+                <label htmlFor="email">E-mail</label>
+                <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" id="email" name="email" />
+                <label htmlFor="number">Numero de mobile</label>
+                <input value={number} onChange={(e) => setNumber(e.target.value)}type="number" id="number" name="number" />
+                <label htmlFor="password">Mot de passe</label>
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" id="password" name="password" />
+                <button type="submit">S'inscrire</button>
+            </form>
+            <button className="link-btn" onClick={() => props.onFormSwitch('connexion')}>Vous avez déjà un compte ? Connectez-vous ici.</button>
+        </div>
     )
 }
