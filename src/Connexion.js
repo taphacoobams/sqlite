@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Login = (props) => {
+export const Connexion = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -17,14 +17,14 @@ const handleSubmit = (e) => {
 					<input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/> 
 				</div> 
 				<div> 
-					<label htmlFor="password">Password</label>
+					<label htmlFor="password">Mot de passe</label>
 					<input type="password" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/> 
 				</div>  
-				<button type="submit">Login</button>
+				<button type="submit">Se connecter</button>
 			</form>
-			<button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
+			<button className="link-btn" onClick={() => props.onFormSwitch('register')}>Vous n’avez pas de compte ? Inscrivez-vous</button>
         </div>
 	)
 }
 
-export default Login  
+export default Connexion  
