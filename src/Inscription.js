@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Inscription() {
   const [name, setName] = useState('');  
@@ -9,23 +10,13 @@ function Inscription() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`Email: ${email}, Password: ${password}, Confirm Password: ${confirmPassword}`);
+    console.log(`Name: ${name},Email: ${email},Username: ${username}, Password: ${password}, Confirm Password: ${confirmPassword}`);
   };
 
   return (
     <div className="signup">
       <form className="signup-form" onSubmit={handleSubmit}>
-        <h2>Sign up</h2>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="name"
-            id="name"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+        <div className="form-control">
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -39,7 +30,7 @@ function Inscription() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Nom d'utilisateur</label>
           <input
             type="username"
             id="username"
@@ -50,7 +41,7 @@ function Inscription() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Mot de passe</label>
           <input
             type="password"
             id="password"
@@ -61,7 +52,7 @@ function Inscription() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="confirmPassword">Confirm Password</label>
+          <label htmlFor="confirmPassword">Confirmer le mot de passe</label>
           <input
             type="password"
             id="confirmPassword"
@@ -71,10 +62,10 @@ function Inscription() {
             required
           />
         </div>
-        <button type="submit">Sign up</button>
+        <button type="submit">Valider</button>
         <p>
-          Already have an account?{' '}
-          <Link to="/login">Log in</Link>
+          Avez-vous déja un compte?{' '}
+          <Link to="/">Se connecter</Link>
         </p>
       </form>
     </div>

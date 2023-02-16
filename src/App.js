@@ -1,12 +1,21 @@
-import React from 'react';
+import React  from 'react';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Connexion from './Connexion';
-import './App.css'; // Importation du fichier CSS global ou local
+import Inscription from './Inscription';
+import Accueil from './Accueil';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Connexion />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Connexion />} />
+          <Route path="/register" element={<Inscription />} />
+          <Route path="/home" component={<Accueil />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

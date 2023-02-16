@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Connexion.css';
 
 function Connexion(props) {
@@ -30,7 +31,7 @@ function Connexion(props) {
     <div className="login-container">
       <aside className="login-aside">
         <div className="image">
-          <img class="logo" src="logo1.png" alt="LOGO"/>
+          <img className="logo" src="logo1.png" alt="LOGO"/>
         </div>
         <h2>Avec A'Rosa-je, faites garder vos plantes avec sécurité par des passionnés.</h2>
       </aside>
@@ -58,8 +59,7 @@ function Connexion(props) {
           </div>
           <button className="login" type="submit">Se connecter</button>
         </form>
-        <a className="forget_password" href="#">Mot de passe oublié</a>
-        <button className="new_account" onClick={() => props.onFormSwitch('register')}>Créer un nouveau compte</button>
+        <p>Vous n'avez pas de compte ? <Link to="/register">Inscrivez-vous ici</Link>.</p>
       </div>
     </div>
   );
