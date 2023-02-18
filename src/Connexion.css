@@ -13,7 +13,7 @@
     align-items: center;  
     border-radius: 8px;
     background-color: #52922E;
-    width: 300px;
+    width: 320px;
     padding: 30px;
     margin: 50px;
     float: right;
@@ -68,8 +68,6 @@
   
   input {
     padding: 10px;
-    margin: auto;
-    border: none;
     width: 280px; 
     border: 1px solid #dddfe2;
     border-radius: 6px;
@@ -84,10 +82,11 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 280px;
   }
 
-  hr {
-    color: black;
+  p{
+    font-size: 14px;
   }
 
   .login{   

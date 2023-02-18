@@ -13,11 +13,21 @@ function Inscription() {
     console.log(`Name: ${name},Email: ${email},Username: ${username}, Password: ${password}, Confirm Password: ${confirmPassword}`);
   };
 
+
   return (
     <div className="signup">
-      <form className="signup-form" onSubmit={handleSubmit}>
-        <div className="form-control">
-        </div>
+      <form className="signup-form" onSubmit={handleSubmit} >
+        <div className="form-group">
+          <label htmlFor="name">Nom</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>  
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
@@ -65,7 +75,7 @@ function Inscription() {
         <button type="submit">Valider</button>
         <p>
           Avez-vous déja un compte?{' '}
-          <Link to="/">Se connecter</Link>
+          <Link className='connect' to="/">Se connecter.</Link>
         </p>
       </form>
     </div>

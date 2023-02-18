@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Connexion.css';
 
 function Connexion(props) {
@@ -7,6 +7,7 @@ function Connexion(props) {
   const [password, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +25,7 @@ function Connexion(props) {
     if (username && password) {
       console.log('Nom d\'utilisateur:', username);
       console.log('Mot de passe:', password);
+      navigate('/home');
     }
   };
 
