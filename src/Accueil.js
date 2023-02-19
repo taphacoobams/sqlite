@@ -1,16 +1,12 @@
 import React from 'react';
-import './Accueil.css';
+import LeftSidebar from './LeftSidebar';
 
-function Accueil() {
+function App() {
   return (
-    <nav className="navbar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div>
+      <LeftSidebar />
+    </div>
   );
 }
 
-export default Accueil;
+export default App;

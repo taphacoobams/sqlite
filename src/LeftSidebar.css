@@ -1,0 +1,31 @@
+.left-sidebar {
+    height: 100%;
+    width: 243px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    color: green;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left-sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-sidebar li {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-sidebar li a {
+    text-decoration: none;
+    color: green;
+    display: block;
+    margin-left: 5px;
+  }
+  
