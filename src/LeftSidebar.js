@@ -6,7 +6,7 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-import { BiPhone } from "react-icons/bi";
+import { BsEnvelope } from "react-icons/bs";
 
 function LeftSidebar() {
   return (
@@ -15,7 +15,7 @@ function LeftSidebar() {
         <li><AiOutlineHome size="1.5em" /><Link to="/home">Accueil</Link></li>
         <li><AiOutlineMessage size="1.5em" /><Link to="/messages">Messages</Link></li>
         <li><AiOutlineUser size="1.5em" /><Link to="/profile">Profil</Link></li>
-        <li><BiPhone size="1.5em" /><Link to="/contact">Contacter un botaniste</Link></li>
+        <li><BsEnvelope size="1.5em" /><Link to="/contact">Contacter un botaniste</Link></li>
         <li><AiOutlinePlusCircle size="1.5em" /><Link to="/post">Demander un gardinnage</Link></li>
         <li><AiOutlineSetting size="1.5em" /><Link to="/settings">Parametres</Link></li>
         <li><AiOutlineLogout size="1.5em" /><Link to="/">Deconnexion</Link></li>

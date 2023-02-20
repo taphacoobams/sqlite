@@ -1,10 +1,12 @@
 import React from 'react';
 import LeftSidebar from './LeftSidebar';
+import Navbar from './Navbar';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <LeftSidebar />
+      <Navbar />
     </div>
   );
 }

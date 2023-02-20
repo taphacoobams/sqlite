@@ -1,13 +1,13 @@
 .left-sidebar {
     height: 100%;
-    width: 243px;
+    width: 250px;
     position: fixed;
-    top: 0;
+    top: 89px;;
     left: 0;
     background-color: yellow;
     color: green;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   
   .left-sidebar ul {
@@ -17,7 +17,7 @@
   }
   
   .left-sidebar li {
-    padding: 8px 16px;
+    padding: 15px 16px;
     display: flex;
     align-items: center;
   }
